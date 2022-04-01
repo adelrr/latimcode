@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>latimcode</title>
+    <title>LatimCode</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -50,15 +50,49 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li class="menu-has-children"><a href="#">Drop Down</a>
+                    <li class="menu-has-children"><a href="">Drop Down</a>
                         <ul>
-                            <li><a href="./User/login.html">LOGIN</a></li>
+                            <li><a href="#">Drop Down 1</a></li>
                             <li><a href="#">Drop Down 3</a></li>
                             <li><a href="#">Drop Down 4</a></li>
                             <li><a href="#">Drop Down 5</a></li>
                         </ul>
                     </li>
                     <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="#" data-target="#login" data-toggle="modal">Login</a>
+                        <div id="login" class="modal" role="dialog" data-backdrop="false" data-dismiss="modal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="modal-header">
+                                        <h5 class="modal-header">Login</h5>
+                                        <button data-dismiss="modal" class="close"data-bs-dismiss="modal">&times;</button>
+                                    </div>
+                                    <form >
+                                        <div class="modal-body">
+                                        <input type="text" id="username" name="username" class="username form-control" placeholder="Username"/>
+                                        <input type="password" id="password" name="password" class="password form-control" placeholder="password"/>
+                                        <input type="checkbox" onclick='myFunction()'> Show Password<br><br>
+                                        <script>
+                                            function myFunction() {
+                                            var x = document.getElementById("password");
+                                            if (x.type === "password") {
+                                                x.type = "text";
+                                            } else {
+                                                x.type = "password";
+                                            }
+                                            }
+                                        </script>
+                                        <input class="btn login" type="submit" value="Login" />
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#">Forgot password?</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <!-- #nav-menu-container -->
@@ -759,13 +793,14 @@
                             <address>Av. Lerdo de Tejada #2264</address>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <!-- <div class="col-md-3">
                         <div class="contact-address">
                             <i class="ion-ios-location-outline"></i>
                             <h3>US Address</h3>
                             <address>112 Summer Lakes Drive Cary, NC 27513</address>
                         </div>
                     </div>
+                    -->
                     <div class="col-md-3">
                         <div class="contact-phone">
                             <i class="ion-ios-telephone-outline"></i>
@@ -778,7 +813,7 @@
                         <div class="contact-email">
                             <i class="ion-ios-email-outline"></i>
                             <h3>Email</h3>
-                            <p><a href="mailto:info@example.com">info@latimcode.com</a></p>
+                            <p><a href="mailto:armando@latimcode.com">armando@latimcode.com</a></p>
                         </div>
                     </div>
 
@@ -826,8 +861,7 @@
 
                     <div class="col-lg-3 col-md-6 footer-info">
                         <h3>latimcode</h3>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat
-                            mauris nunc congue.</p>
+                        <p>This site is owned and managed by Armando Del Río.</p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
@@ -844,9 +878,9 @@
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h4>Contact Us</h4>
                         <p>
-                            A108 Adam Street <br> New York, NY 535022<br> United States <br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            Av. Lerdo de Tejada #2264 <br> Guadalajara, Jalisco<br> México <br>
+                            <strong>Phone:</strong> +52 33-25-00-76-39<br>
+                            <strong>Email:</strong> <a href="mailto:armando@latimcode.com"></a>armando@latimcode.com</a><br>
                         </p>
 
                         <div class="social-links">
